@@ -16,7 +16,7 @@ AI Brain Skills provides a structured, hierarchical knowledge base that AI agent
 
 ```
 ai-brain-skills/
-├── .claude/                    # Claude skill directory
+├── .amkyaw/                   # AI Brain Skills directory
 │   ├── skills/
 │   │   ├── 00-core/           # Base infrastructure (auto-loaded)
 │   │   ├── 01-domains/        # Domain-specific expertise

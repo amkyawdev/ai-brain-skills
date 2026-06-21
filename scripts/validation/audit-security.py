@@ -17,4 +17,4 @@ def audit_security(skills_dir):
     print("✓ Security audit passed")
 
 if __name__ == "__main__":
-    audit_security("./.claude/skills")
+    audit_security("./.amkyaw/skills")

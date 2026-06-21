@@ -11,4 +11,4 @@ def check_conflicts(skills_dir):
     return conflicts
 
 if __name__ == "__main__":
-    check_conflicts("./.claude/skills")
+    check_conflicts("./.amkyaw/skills")

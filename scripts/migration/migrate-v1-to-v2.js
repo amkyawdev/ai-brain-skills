@@ -11,4 +11,4 @@ function migrate(skillsDir) {
   console.log('✓ Migration complete');
 }
 
-migrate('./.claude/skills');
+migrate('./.amkyaw/skills');

@@ -5,7 +5,7 @@ set -e
 
 echo "Validating skills..."
 
-find .claude/skills -name "SKILL.md" | while read skill; do
+find .amkyaw/skills -name "SKILL.md" | while read skill; do
   echo "Checking: $skill"
 done
 

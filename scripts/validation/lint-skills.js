@@ -35,4 +35,4 @@ function lintSkills(skillsDir) {
   }
 }
 
-lintSkills(process.argv[2] || './.claude/skills');
+lintSkills(process.argv[2] || './.amkyaw/skills');
