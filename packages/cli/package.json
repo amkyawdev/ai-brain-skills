@@ -1,0 +1,21 @@
+{
+  "name": "@amkyaw/cli",
+  "version": "1.0.0",
+  "description": "AI Brain Skills CLI",
+  "main": "bin/amkyaw.js",
+  "bin": {
+    "amkyaw": "./bin/amkyaw.js"
+  },
+  "scripts": {
+    "start": "node bin/amkyaw.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "ora": "^7.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

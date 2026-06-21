@@ -1,0 +1,107 @@
+{
+  "name": "ai-brain-skills",
+  "displayName": "AI Brain Skills",
+  "description": "AI Brain Skills Framework for VS Code",
+  "version": "1.0.0",
+  "publisher": "amkyaw",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onCommand:amkyaw.skillList",
+    "onCommand:amkyaw.skillSearch",
+    "onCommand:amkyaw.skillCreate",
+    "onView:amkyawSkills"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "amkyaw-sidebar",
+          "title": "AI Brain Skills",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": [
+      {
+        "id": "amkyawSkills",
+        "type": "tree",
+        "name": "Skills",
+        "when": "amkyaw.initialized"
+      }
+    ],
+    "commands": [
+      {
+        "command": "amkyaw.skillList",
+        "title": "List All Skills",
+        "icon": "$(list-selection)"
+      },
+      {
+        "command": "amkyaw.skillSearch",
+        "title": "Search Skills",
+        "icon": "$(search)"
+      },
+      {
+        "command": "amkyaw.skillCreate",
+        "title": "Create New Skill",
+        "icon": "$(add)"
+      },
+      {
+        "command": "amkyaw.skillOpen",
+        "title": "Open Skill",
+        "icon": "$(go-to-file)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "amkyaw.skillSearch",
+          "when": "view == amkyawSkills",
+          "group": "navigation"
+        },
+        {
+          "command": "amkyaw.skillCreate",
+          "when": "view == amkyawSkills",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "amkyaw.skillList",
+          "when": "false"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "AI Brain Skills",
+      "properties": {
+        "amkyaw.skillsPath": {
+          "type": "string",
+          "default": ".amkyaw/skills",
+          "description": "Path to skills directory"
+        },
+        "amkyaw.autoLoadCore": {
+          "type": "boolean",
+          "default": true,
+          "description": "Auto-load core skills on startup"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}

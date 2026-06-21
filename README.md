@@ -11,6 +11,10 @@ AI Brain Skills provides a structured, hierarchical knowledge base that AI agent
 - **Custom Skills** - Organization-specific patterns
 - **Hooks System** - Pre/post execution automation
 - **Shared Libraries** - Reusable utilities
+- **CLI Tool** - Interactive command-line interface
+- **VS Code Extension** - IDE integration
+- **Dashboard** - Analytics and metrics visualization
+- **AI Generator** - Auto-generate skills with AI
 
 ## 📁 Structure
 
@@ -22,6 +26,11 @@ ai-brain-skills/
 │   │   ├── 01-domains/        # Domain-specific expertise
 │   │   └── 04-custom/         # User/organization specific
 │   └── config/                # Configuration files
+├── packages/
+│   ├── cli/                   # CLI Tool (@amkyaw/cli)
+│   ├── vscode-extension/      # VS Code Extension
+│   ├── dashboard/             # Analytics Dashboard
+│   └── ai-generator/           # AI Skill Generator
 ├── hooks/                      # Execution hooks
 ├── shared/                     # Shared resources
 ├── tests/                      # Test framework
@@ -36,6 +45,13 @@ ai-brain-skills/
 # Install dependencies
 npm install
 
+# Use the CLI
+npx amkyaw skill:list
+npx amkyaw skill:search react
+
+# Run Dashboard
+cd packages/dashboard && npm install && npm run dev
+
 # Validate all skills
 npm run validate
 
@@ -44,6 +60,61 @@ npm test
 
 # Build skills
 npm run build
+```
+
+## 🛠️ CLI Tool
+
+```bash
+# Install globally
+npm install -g @amkyaw/cli
+
+# Commands
+amkyaw skill:list              # List all skills
+amkyaw skill:search <query>     # Search skills
+amkyaw skill:explore           # Interactive explorer
+amkyaw skill:compare <s1> <s2>  # Compare two skills
+amkyaw skill:create <name>      # Create new skill
+amkyaw validate                 # Validate all skills
+amkyaw build                    # Build for deployment
+```
+
+## 🔌 VS Code Extension
+
+Install from `packages/vscode-extension/`:
+
+- 🌳 Skills Tree View in Sidebar
+- 🔍 Quick Search
+- ➕ Create Skills
+- 📄 Open Skill Docs
+
+## 📊 Dashboard
+
+Analytics dashboard with:
+
+- Skills usage metrics
+- Category distribution charts
+- Recent activity feed
+- Top skills ranking
+
+```bash
+cd packages/dashboard
+npm install
+npm run dev
+```
+
+## 🤖 AI Generator
+
+Auto-generate skills using AI:
+
+```bash
+# Set API key
+export OPENAI_API_KEY=your_key
+
+# Generate skill
+npx amkyaw-ai generate my-skill backend
+
+# Analyze codebase
+npx amkyaw-ai analyze ./src
 ```
 
 ## 📖 Documentation
@@ -76,7 +147,7 @@ npm run build
 
 ## 🔧 Configuration
 
-Configuration files in `.claude/config/`:
+Configuration files in `.amkyaw/config/`:
 
 - `skills.json` - Skill registry
 - `priority-rules.json` - Conflict resolution
