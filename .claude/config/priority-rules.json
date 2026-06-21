@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "rules": [
+    {
+      "name": "core-before-domain",
+      "description": "Core skills take precedence over domain skills",
+      "conditions": {
+        "skill1.category": "core",
+        "skill2.category": "domain"
+      },
+      "priority": 1
+    },
+    {
+      "name": "specific-before-general",
+      "description": "More specific skills take precedence",
+      "conditions": {
+        "skill1.path.depth": { "$gt": "skill2.path.depth" }
+      },
+      "priority": 2
+    }
+  ],
+  "defaultPriority": 50
+}

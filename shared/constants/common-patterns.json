@@ -1,0 +1,28 @@
+{
+  "patterns": [
+    {
+      "name": "repository-pattern",
+      "description": "Abstracts database access",
+      "examples": ["Prisma", "SQLAlchemy"],
+      "tags": ["architecture", "database"]
+    },
+    {
+      "name": "factory-pattern",
+      "description": "Creates objects without specifying exact class",
+      "examples": ["Component factories"],
+      "tags": ["creational", "architecture"]
+    },
+    {
+      "name": "observer-pattern",
+      "description": "Notifies dependents of state changes",
+      "examples": ["Event emitters", "Redux"],
+      "tags": ["behavioral", "reactive"]
+    },
+    {
+      "name": "strategy-pattern",
+      "description": "Selects algorithm at runtime",
+      "examples": ["Payment processors"],
+      "tags": ["behavioral", "flexibility"]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "ai-brain-skills",
+  "version": "1.0.0",
+  "description": "Comprehensive skill framework for AI agents",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/build/compile-skills.js",
+    "validate": "bash scripts/validation/validate-all-skills.sh",
+    "lint": "node scripts/validation/lint-skills.js",
+    "test": "jest",
+    "test:unit": "jest tests/unit",
+    "test:integration": "jest tests/integration",
+    "test:e2e": "jest tests/e2e",
+    "deploy": "bash scripts/deployment/deploy-to-claude.sh",
+    "docs": "node scripts/build/doc-generator.js"
+  },
+  "keywords": ["ai", "skills", "claude", "framework"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "glob": "^10.3.10",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.1"
+  }
+}

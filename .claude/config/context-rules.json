@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "rules": [
+    {
+      "trigger": "fileType:typescript",
+      "loadSkills": ["web-frontend/react", "web-frontend/nextjs"]
+    },
+    {
+      "trigger": "fileType:python",
+      "loadSkills": ["backend/python/fastapi", "backend/python/django"]
+    },
+    {
+      "trigger": "fileType:javascript",
+      "loadSkills": ["backend/nodejs/express"]
+    },
+    {
+      "trigger": "fileType:go",
+      "loadSkills": ["backend/golang"]
+    }
+  ],
+  "defaultSkills": ["00-core/system-foundation"]
+}

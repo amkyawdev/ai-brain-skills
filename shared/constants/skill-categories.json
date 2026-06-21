@@ -1,0 +1,14 @@
+{
+  "categories": [
+    { "id": "core", "name": "Core Infrastructure", "description": "Base skills for AI operations" },
+    { "id": "domains", "name": "Domain Expertise", "description": "Domain-specific knowledge" },
+    { "id": "custom", "name": "Custom Skills", "description": "Organization-specific skills" },
+    { "id": "web-frontend", "name": "Web Frontend", "description": "Frontend frameworks and tools" },
+    { "id": "backend", "name": "Backend", "description": "Server-side development" },
+    { "id": "database", "name": "Database", "description": "Database design and management" },
+    { "id": "devops", "name": "DevOps", "description": "CI/CD and infrastructure" },
+    { "id": "security", "name": "Security", "description": "Security best practices" },
+    { "id": "testing", "name": "Testing", "description": "Testing strategies" },
+    { "id": "data-engineering", "name": "Data Engineering", "description": "Data pipelines and processing" }
+  ]
+}

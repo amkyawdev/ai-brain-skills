@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "rules": {
+    "allowFileSystemAccess": true,
+    "allowNetworkAccess": true,
+    "allowProcessExecution": true,
+    "restrictedPaths": [
+      "~/.ssh",
+      "~/.aws",
+      "/etc/passwd"
+    ],
+    "maxFileSize": "10MB",
+    "scanOnLoad": true
+  }
+}

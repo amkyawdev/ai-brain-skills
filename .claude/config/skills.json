@@ -1,0 +1,25 @@
+{
+  "$schema": "./schemas/skills-schema.json",
+  "version": "2.0",
+  "skills": {
+    "00-core": {
+      "description": "Base infrastructure skills (auto-loaded)",
+      "autoLoad": true,
+      "priority": 100,
+      "categories": ["infrastructure", "core"]
+    },
+    "01-domains": {
+      "description": "Domain-specific expertise",
+      "autoLoad": false,
+      "priority": 50,
+      "categories": ["domains", "expertise"]
+    },
+    "04-custom": {
+      "description": "User/organization specific skills",
+      "autoLoad": false,
+      "priority": 10,
+      "categories": ["custom", "organization"]
+    }
+  },
+  "autoLoadCategories": ["infrastructure", "core"]
+}

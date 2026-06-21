@@ -1,0 +1,14 @@
+# Code Owners
+
+# Default owners for everything
+*       @your-org/core-team
+
+# Domain skills
+.claude/skills/01-domains/web-frontend/   @your-org/frontend-team
+.claude/skills/01-domains/backend/        @your-org/backend-team
+.claude/skills/01-domains/database/       @your-org/data-team
+.claude/skills/01-domains/devops/         @your-org/devops-team
+.claude/skills/01-domains/security/      @your-org/security-team
+
+# Custom skills
+.claude/skills/04-custom/                @your-org/core-team

@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "rules": {
+    "maxSkillsLoaded": 10,
+    "maxReferencesPerSkill": 20,
+    "cacheEnabled": true,
+    "lazyLoadReferences": true,
+    "parallelLoading": false
+  }
+}
