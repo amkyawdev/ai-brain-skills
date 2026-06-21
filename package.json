@@ -12,7 +12,7 @@
     "test:integration": "jest tests/integration",
     "test:e2e": "jest tests/e2e",
     "deploy": "bash scripts/deployment/deploy-to-claude.sh",
-    "docs": "node scripts/build/doc-generator.js"
+    "docs": "node shared/lib/generators/doc-generator.js"
   },
   "keywords": ["ai", "skills", "claude", "framework"],
   "author": "",
